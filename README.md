@@ -47,16 +47,16 @@ Comandos que aun no memorizo bien
 
 ## Remoto
 - **Fetch**  
-  - `git fetch *aliasRepo* *rama*`
+  - `git fetch *aliasRepo* *rama*` = Descarga los cambios del repositorio pero no los aplica automaticamente
   
 - **Pull**  
-  - `git pull *aliasRepo* *rama*`
+  - `git pull *aliasRepo* *rama*` = Descraga y aplica los cambios del repositorio
 
 - **Push**
-  - `git push *aliasRepo* *rama*`
+  - `git push *aliasRepo* *rama*` = Mandar al repositorio remoto
 
-- **Renombrar aliasRepo**
-  - `git remote rename alias aliasNuevo`
+- **Configuraciones**
+  - `git remote rename alias aliasNuevo` = Cambia el nombre del aliasRepo
 
 ## Investigar
 - git revert
