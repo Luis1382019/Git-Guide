@@ -67,9 +67,9 @@ Variables
 ___
 Imagen
 
-![Imagen](https://rutaImg)
+![Imagen](imagenes/fork.png)
 
-[![alt](https://rutaImg)](https://rutaLink)
+[![alt](imagenes/code.png)](https://www.github.com)
 
 ## Codigo
 
