@@ -1,110 +1,62 @@
-# Documento en Markdown
+# Mis comandos de git
 
-Escape de caracter con \
+- [Mis comandos de git](#mis-comandos-de-git)
+  - [Creados por mi](#creados-por-mi)
+  - [Pendientes](#pendientes)
+  - [Remoto](#remoto)
+  - [Investigar](#investigar)
 
-- [Documento en Markdown](#documento-en-markdown)
-  - [Texto](#texto)
-  - [Listas](#listas)
-  - [Otras](#otras)
-  - [Externo](#externo)
-  - [Codigo](#codigo)
-  - [Tablas](#tablas)
-- [Task List](#task-list)
-- [Emoji](#emoji)
-- [Comentarios](#comentarios)
-- [Toggle](#toggle)
-  - [Avisos](#avisos)
+## Creados por mi
+**Stash**
+- `git showstash` = git stash --list --decorate
+  
+**Configuracion**
+- `git conf` = git config --global -e  
+  
+**Log**
+- `git lg` = log formateado con graph, una linea y colores agradables
 
+**Status**
+- `git st` = status --short
+  
+## Pendientes
+Comandos que aun no memorizo bien
 
-## Texto
+- **Ammend**
+  - `git commit --ammend -m "Hola"` = Modifica el ultimo commit(Y manda archivos del stage en la modificacion)
+  
+- **Stash**
+  - `git stash` = stash  
+    `git stash apply` = aplica el stash  
+    `git stash pop` = aplica el stash y lo borra  
+    `git stash drop` = borra el stash  
 
-**Pueden ser * o _**
+- **Reflog**
+  - `git reflog` = Registro de los HEAD 
 
-*Texto en cursiva*
+- **Reset:**
+  - `--soft` = No cambia el stage ni el directorio
+  - `--mixed` = Vacia el stage
+  - `--hard` = Vacia el stage y el directorio
 
-**Negritas**
+- **Tag**
+  - `git tag etiqueta hashCommit`
 
-***Negritas en cursiva***
+- **Branch**
+  - `gti branch -d mirama` = Eliminar ramas
 
-~~tachado~~
+## Remoto
+- **Fetch**  
+  - `git fetch *aliasRepo* *rama*`
+  
+- **Pull**  
+  - `git pull *aliasRepo* *rama*`
 
-## Listas
+- **Push**
+  - `git push *aliasRepo* *rama*`
 
-**Se puede usar +,-,\* o numeros**
-* Lista
-    * Lista
+- **Renombrar aliasRepo**
+  - `git remote rename alias aliasNuevo`
 
-**Los numeros solo se anidan con espacios**
-1. Lista  
-    2. Lista
-
-Mezcladas
-
-1. Inicio
-    * Elemento 1.1
-2. Conclusion
-    * Elemento 2.1
-3. Final
-    * Elemento 3.1
-
-## Otras
-
-Estas lineas tambien puede ser * o _
-***
-
-> Esto es una cita
-
-## Externo
-
-Links
-[Youtube ;)](www.youtube.com "cliquea aqui")
-
-Variables
-[Facebook][miLink]
-
-[miLink]: https://www.facebook.com "Hora de stalkear"
-
-___
-Imagen
-
-![Imagen](https://rutaImg)
-
-[![alt](https://rutaImg)](https://rutaLink)
-
-## Codigo
-
-`Codigo: print("Hola")`
-
-```py
-def saludar():
-    print("Hola")
-    return 0
-```
-
-## Tablas
-| Columna1 | Columna2 | Columna3 |
-|   :---   |  :---:   |   ---:   |
-|  txtIzq  |txtCentro |  txtDer  |
-
-# Task List
-- [x] Cumplido  
-- [ ] No cumplido
-
-# Emoji
-Este es un emoji :joy:
-
-# Comentarios
-Abajo de esto hay un comentario
-
-[Comentario]: #
-
-# Toggle
-
-<details>
-    <summary>Haz click aqui</summary>
-    Sorpresa
-</details>
-
-## Avisos
-
-> :bulb: **Nota:** No se que poner la vdd  
+## Investigar
+- git revert
