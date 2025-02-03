@@ -1,13 +1,19 @@
-# Mis comandos de git
+# Guia de Git y Github
 
-- [Mis comandos de git](#mis-comandos-de-git)
-  - [Creados por mi](#creados-por-mi)
-  - [Importantes basicos](#importantes-basicos)
-  - [Importantes](#importantes)
-  - [Remoto](#remoto)
-  - [Investigar](#investigar)
+- [Guia de Git y Github](#guia-de-git-y-github)
+  - [Git](#git)
+    - [Mis comandos](#mis-comandos)
+    - [Importantes basicos](#importantes-basicos)
+    - [Importantes](#importantes)
+    - [Remoto](#remoto)
+    - [Faltante de agregar](#faltante-de-agregar)
+  - [Github](#github)
 
-## Creados por mi
+## Git
+
+Seccion con comandos e instrucciones sobre git
+
+### Mis comandos
 **Stash**
 - `git showstash` = git stash --list --decorate
   
@@ -20,7 +26,7 @@
 **Status**
 - `git st` = status --short
   
-## Importantes basicos
+### Importantes basicos
 
 - **Iniciales**
   - `git init` = Crea el repositorio local
@@ -36,7 +42,7 @@
   - `git config --global -e` = Abre el archivo de configuracion global
     
   
-## Importantes
+### Importantes
 
 - **Ammend**
   - `git commit --ammend -m "Hola"` = Modifica el ultimo commit(Y manda los archivos del stage en la modificacion)
@@ -62,7 +68,7 @@
   - `gti branch -d mirama` = Eliminar ramas
   - `git branch -M main` = Cambia el nombre de la rama actual, -M la forza y -m lo intenta
 
-## Remoto
+### Remoto
 - **Fetch**  
   - `git fetch aliasRepo rama` = Descarga los cambios del repositorio pero no los aplica automaticamente
   
@@ -77,6 +83,17 @@
   - `git remote rename alias aliasNuevo` = Cambia el nombre del aliasRepo  
   - `git remote add aliasRepo https://github.com/usuario/repositorio.git` = Conecta el repositorio actual con uno remoto
 
-
-## Investigar
+### Faltante de agregar
 - git revert
+
+## Github
+Seccion con comandos e instrucciones sobre git
+
+- Fork: Clona el repositorio en tu cuenta
+  
+   ![Fork](imagenes/fork.png)
+
+- Code: Te da el codigo para clonar el repositorio
+  - Nota: Es preferible con SSH  
+  
+   ![Code](imagenes/code.png)
