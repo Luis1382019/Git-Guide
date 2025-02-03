@@ -2,7 +2,8 @@
 
 - [Mis comandos de git](#mis-comandos-de-git)
   - [Creados por mi](#creados-por-mi)
-  - [Pendientes](#pendientes)
+  - [Importantes basicos](#importantes-basicos)
+  - [Importantes](#importantes)
   - [Remoto](#remoto)
   - [Investigar](#investigar)
 
@@ -19,11 +20,26 @@
 **Status**
 - `git st` = status --short
   
-## Pendientes
-Comandos que aun no memorizo bien
+## Importantes basicos
+
+- **Iniciales**
+  - `git init` = Crea el repositorio local
+  - `git log` = Registro de los commits
+  - `git status` = Estado del repositorio
+  - `git add example.py` = Añade el archivo example al stage
+  - `git init` = Crea el repositorio local
+- **Modificadores**
+  - `.` = Todo
+  - `*.py` = Todos los archivos .py
+  - `media/` = Todos los archivos de la carpeta media
+- **Configuracion**
+  - `git config --global -e` = Abre el archivo de configuracion global
+    
+  
+## Importantes
 
 - **Ammend**
-  - `git commit --ammend -m "Hola"` = Modifica el ultimo commit(Y manda archivos del stage en la modificacion)
+  - `git commit --ammend -m "Hola"` = Modifica el ultimo commit(Y manda los archivos del stage en la modificacion)
   
 - **Stash**
   - `git stash` = stash  
@@ -44,19 +60,23 @@ Comandos que aun no memorizo bien
 
 - **Branch**
   - `gti branch -d mirama` = Eliminar ramas
+  - `git branch -M main` = Cambia el nombre de la rama actual, -M la forza y -m lo intenta
 
 ## Remoto
 - **Fetch**  
-  - `git fetch *aliasRepo* *rama*` = Descarga los cambios del repositorio pero no los aplica automaticamente
+  - `git fetch aliasRepo rama` = Descarga los cambios del repositorio pero no los aplica automaticamente
   
 - **Pull**  
-  - `git pull *aliasRepo* *rama*` = Descraga y aplica los cambios del repositorio
+  - `git pull aliasRepo rama` = Descraga y aplica los cambios del repositorio
 
 - **Push**
-  - `git push *aliasRepo* *rama*` = Mandar al repositorio remoto
+  - `git push -u aliasRepo main` = Primer push de la rama(-u establece la relación de seguimiento)
+  - `git push aliasRepo rama` = Mandar al repositorio remoto
 
 - **Configuraciones**
-  - `git remote rename alias aliasNuevo` = Cambia el nombre del aliasRepo
+  - `git remote rename alias aliasNuevo` = Cambia el nombre del aliasRepo  
+  - `git remote add aliasRepo https://github.com/usuario/repositorio.git` = Conecta el repositorio actual con uno remoto
+
 
 ## Investigar
 - git revert
