@@ -110,6 +110,10 @@ Ignorar los .txt que terminen en ), como hola(copia2).txt
 ### Faltante de agregar
 - git revert
 - git rebase
+- git flow
+- github flow
+- git cherry-pick
+- github pages
 
 ## Github
 Seccion con comandos e instrucciones sobre git
