@@ -7,6 +7,7 @@ Nota: En Markdown.md puedes encontrar una guia rapida de comandos de markdown
     - [Importantes basicos](#importantes-basicos)
     - [Importantes](#importantes)
     - [Remoto](#remoto)
+    - [Archivos git](#archivos-git)
     - [Faltante de agregar](#faltante-de-agregar)
   - [Github](#github)
 
@@ -65,9 +66,12 @@ Seccion con comandos e instrucciones sobre git
 - **Tag**
   - `git tag etiqueta hashCommit`
 
-- **Branch**
+- **Ramas**
   - `gti branch -d mirama` = Eliminar ramas
   - `git branch -M main` = Cambia el nombre de la rama actual, -M la forza y -m lo intenta
+  - `git merge`: Aplica los cambios de una rama en la otra y preserva el historial de ambas
+  - `git rebase`: Reaplica los commits de una rama sobre otra y limpia el historial
+  - `git squash`: Combina varios commits en uno solo para un historial más limpio (`git rebase -i`).
 
 ### Remoto
 - **Fetch**  
@@ -81,11 +85,31 @@ Seccion con comandos e instrucciones sobre git
   - `git push aliasRepo rama` = Mandar al repositorio remoto
 
 - **Configuraciones**
-  - `git remote rename alias aliasNuevo` = Cambia el nombre del aliasRepo  
-  - `git remote add aliasRepo https://github.com/usuario/repositorio.git` = Conecta el repositorio actual con uno remoto
+  - `git remote -v` = Ver los remotos del repositorio
+  - `git remote rename alias aliasNuevo` = Cambia el nombre del alias de "alias" a "aliasNuevo"
+  - `git remote remove aliasRepo` = Ellimina el alias "aliasRepo"
+  - `git remote add aliasRepo https://github.com/usuario/repositorio.git` = Conecta el repositorio actual con uno remoto  
+  Nota: Se pueden crear varios alias para el mismo repositorio(Poco util), o crear varios alias para diferentes repositorios(util si alojamos nuestro proyecto en varias plataformas, como github y gitlab)
 
+### Archivos git
+  - `.gitkeep` = Le dice a github que necesitamos que trackee la carpeta en la que esta almacenado (Util cuando esta vacia, ya que git las ignora)  
+  - `.gitignore` = Dentro de este archivo podemos escribir que cosas queremos que git ignore, como por ejemplo la carpeta DS_STORE para desarrolladores de mac, o los logs de debug de algun archivo  
+
+```js
+#.gitignore para archivos de texto excepto uno llamado hola.txt
+*.txt
+!hola.txt
+
+#Ignorar carpeta fotos(y su contenido)
+fotos/
+
+Ignorar los .txt que terminen en ), como hola(copia2).txt
+*).txt
+```
+  
 ### Faltante de agregar
 - git revert
+- git rebase
 
 ## Github
 Seccion con comandos e instrucciones sobre git
@@ -98,3 +122,5 @@ Seccion con comandos e instrucciones sobre git
   - Nota: Es preferible con SSH  
   
    ![Code](imagenes/code.png)
+
+- Pull request(PR): Despues de hacer un fork y modificar algo, puedes hacer un PR para solicitar al dueño del repositorio original que añada tu cambio
