@@ -1,5 +1,8 @@
 # Guia de Git y Github
 
+Maximo estuvo aqui
+Viva amlo
+
 Nota: En Markdown.md puedes encontrar una guia rapida de comandos de markdown
 - [Guia de Git y Github](#guia-de-git-y-github)
   - [Git](#git)

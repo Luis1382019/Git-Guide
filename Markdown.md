@@ -1,8 +1,7 @@
 # Documento en Markdown
 
 Escape de caracter con \
-Maximo estuvo aqui
-Viva amlo
+
 - [Documento en Markdown](#documento-en-markdown)
   - [Texto](#texto)
   - [Listas](#listas)
